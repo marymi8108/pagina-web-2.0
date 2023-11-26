@@ -1,0 +1,57 @@
+*
+{
+    font-family: 'Sometype Mono', monospace, sans-serif;
+}
+
+
+body
+{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #ef32d9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contenido {
+    display: none;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.btn-contenido
+{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: inherit;
+}
+
+.image-link
+{
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.image-link img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.parrafo-contenido
+{
+    text-align: justify;
+    font-weight: 400;
+}

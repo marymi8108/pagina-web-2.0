@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="css/styles2.css" rel="stylesheet">
+    <title>Unidad 2</title>
+</head>
+<body>
+<h1>Unidad 2</h1>
+<a href="index.html" class="volver">Volver</a>
+<h2>Patrones de diseño</h2>
+<p style="font-weight: 400">Los patrones de diseño en Python son soluciones probadas y documentadas para problemas
+    comunes que surgen durante el desarrollo de software. Estos patrones ayudan a estructurar y organizar el código,
+    mejorando la reusabilidad y mantenibilidad.</p>
+<p>Algunos patrones de diseños son los siguientes:</p>
+<ol>
+    <li><strong>Singleton:</strong>
+        <p>El patrón Singleton garantiza que una clase tenga una única instancia y proporciona un punto de acceso global
+            a esa instancia. Es útil cuando necesitas una única instancia compartida en todo el programa.</p>
+    </li>
+
+    <li><strong>Factory</strong>
+        <p>El patrón Factory se utiliza para crear objetos sin especificar la clase exacta del objeto que se creará.
+            Proporciona una interfaz para crear objetos de diferentes tipos.</p>
+    </li>
+    <li><strong>Observer</strong>
+        <p>El patrón Observer permite que un objeto (el sujeto) notifique a otros objetos (los observadores) sobre
+            cambios en su estado. Es útil para implementar sistemas de eventos o actualizaciones en tiempo real.</p>
+    </li>
+    <li><strong>Strategy</strong>
+        <p>El patrón de diseño Strategy es una solución flexible y desacoplada para implementar diferentes algoritmos en
+            una aplicación. Permite intercambiar fácilmente los algoritmos sin afectar el código que los utiliza y
+            promueve un diseño modular y fácil de mantener.</p>
+    </li>
+
+    <li><strong>Adapter</strong>
+        <p>El patrón de diseño Adapter es utilizado cuando tenemos interfaces de software incompatibles, las cuales a
+            pesar de su incompatibilidad tienen una funcionalidad similar.</p>
+    </li>
+</ol>
+
+<h1>Patrón arquitectura MCU (Microservicios)</h1>
+<p>La arquitectura de microservicios es un estilo de arquitectura de software que estructura una aplicación como una
+    colección de servicios pequeños y autónomos12. Cada microservicio se ejecuta en su propio proceso y se comunica con
+    los demás a través de mecanismos ligeros, generalmente una API HTTP</p>
+<p>Características del patrón MCU</p>
+<ol>
+    <li><strong>Independencia</strong>
+        <p>Cada microservicio es independiente y puede ser desarrollado, desplegado, operado y escalado
+            sin afectar a los demás.
+        </p>
+    </li>
+
+    <li><strong>Poliglotismo</strong>
+        <p>Los microservicios pueden ser desarrollados en diferentes lenguajes de programación, lo que permite
+            elegir el lenguaje más adecuado para cada servicio.</p>
+    </li>
+
+    <li><strong>Descentralización</strong>
+        <p>La arquitectura de microservicios favorece la descentralización y la distribución de responsabilidades. Cada
+            microservicio tiene su propia base de datos y lógica de negocio.</p>
+    </li>
+
+    <li><strong>Resiliencia</strong>
+        <p> Los microservicios son resistentes. Si un servicio falla, los demás pueden seguir funcionando normalmente.</p>
+    </li>
+</ol>
+<p>En Python, puedes construir microservicios utilizando varios frameworks, como Flask y Django1. Flask es una opción
+    popular para los microservicios debido a su simplicidad y flexibilidad1. Para las operaciones de base de datos,
+    puedes usar SQLAlchemy, un ORM (Object-Relational Mapper) de Python. Además, existen patrones de diseño específicos
+    para la arquitectura de microservicios, como el patrón Saga34. Este patrón se utiliza para manejar las transacciones
+    que abarcan múltiples servicios</p>
+
+<h1>Modelo vista controlador (MVC)</h1>
+<p>El Modelo Vista Controlador (MVC) es un patrón de diseño de software que se utiliza comúnmente para implementar
+    interfaces de usuario</p>
+<p>Características MVC</p>
+<ol>
+    <li><strong>Modelo</strong>
+        <p>Consiste en una lógica de aplicación pura, que interactúa con la base de datos3. El modelo proporciona los
+            datos y la lógica empresarial. Por lo general, en una aplicación, un modelo está representado por una base
+            de datos que almacena y devuelve información</p>
+    </li>
+
+    <li><strong>Vista</strong>
+        <p>La vista se utiliza para mostrar datos en la interfaz para que los vean los clientes4. La vista es
+            responsable de la visualización de los datos. Muestra todos los registros obtenidos dentro del modelo.</p>
+    </li>
+
+    <li><strong>Controlador</strong>
+    <p>
+        El controlador actúa como intermediario entre la vista y el modelo3. El controlador es el pegamento entre los
+        dos, coordinando el modelo y la vista de acuerdo con el modo de presentación requerido por el usuario. En el
+        caso de un framework como Flask, el controlador es el encargado de gestionar las rutas de enlace y determinar
+        cuál será la vista que se mostrará en cada url, así como también la gestión de los datos que obtiene o solicita
+        al modelo.
+    </p></li>
+</ol>
+
+</body>
+</html>

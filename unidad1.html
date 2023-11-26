@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles2.css" rel="stylesheet">
+    <title>Unidad 1</title>
+
+</head>
+<body>
+<h1 style="text-align: center">Unidad 1</h1>
+<a href="index.html" class="volver">Volver</a>
+<h2>Introducción a Python</h2>
+<p style="font-weight: 400"><strong>Python es un lenguaje de programación de alto nivel que se ha ganado una merecida reputación
+    por su simplicidad y
+    facilidad de uso.</strong> Desarrollado a finales de la década de 1980 por Guido van Rossum, Python se ha convertido en uno
+    de los lenguajes más populares y ampliamente utilizados en el mundo de la programación.</p>
+<p>Una de las características distintivas de Python es su sintaxis legible y clara. A menudo se dice que Python es un
+    lenguaje que se asemeja mucho al inglés, lo que lo hace accesible para programadores de todos los niveles, desde
+    principiantes hasta expertos. Esta facilidad de lectura y escritura hace que Python sea un excelente punto de
+    partida para aquellos que recién comienzan su viaje en el mundo de la programación.</p>
+<p>Python es un lenguaje versátil que se utiliza en una amplia gama de aplicaciones. Puede utilizarse para desarrollar
+    sitios web, aplicaciones de escritorio, aplicaciones móviles, juegos, análisis de datos, aprendizaje automático y
+    mucho más. Además, Python cuenta con una amplia comunidad de desarrolladores que han creado una gran cantidad de
+    bibliotecas y marcos de trabajo que hacen que el desarrollo sea más eficiente.</p>
+<p>La filosofía de Python se centra en la legibilidad del código y en fomentar la programación limpia y estructurada.
+    Esta filosofía está encapsulada en el "Zen de Python", que es un conjunto de principios y recomendaciones para
+    escribir código de Python de manera efectiva y legible.</p>
+<p>Para comenzar a programar en Python, no se necesita una configuración compleja. Python se instala fácilmente en la
+    mayoría de los sistemas operativos y proporciona un intérprete interactivo que permite probar rápidamente el
+    código.</p>
+<h2>Funciones de bajo orden</h2>
+<p>Las funciones de bajo orden, también conocidas como funciones de orden superior o funciones de primera clase, son un
+    concepto fundamental en la programación funcional. Estas funciones son un pilar de los lenguajes de programación
+    funcional, como Haskell, Lisp y JavaScript, pero también se encuentran en otros lenguajes como Python y Ruby.
+</p>
+<p>Lo que hace que las funciones de bajo orden sean poderosas es su capacidad para tratar las funciones como ciudadanos
+    de primera clase. Esto significa que en estos lenguajes, las funciones pueden ser pasadas como argumentos a otras
+    funciones, devueltas como resultados de otras funciones y almacenadas en variables. Esta flexibilidad permite una
+    programación más modular, abstracción de código y reutilización.</p>
+<p>Las funciones de bajo orden abstraen la lógica común y la encapsulan en funciones genéricas que pueden aceptar
+    diferentes funciones específicas como argumentos. Esto reduce la duplicación de código y promueve un diseño más
+    limpio y mantenible. Por ejemplo, una función de alto orden podría ser una función de mapeo que toma una función de
+    transformación y una lista de datos y aplica la función de transformación a cada elemento de la lista.</p>
+<p>La programación funcional se basa en el principio de que los programas se pueden construir combinando y aplicando
+    funciones de bajo orden de manera elegante. Esto facilita la creación de código más legible y menos propenso a
+    errores, ya que las funciones se pueden componer y reutilizar en diferentes contextos.</p>
+<p>Un ejemplo común de función de bajo orden es la función map en muchos lenguajes de programación, que aplica una
+    función a cada elemento de una lista y devuelve una nueva lista con los resultados. Otras funciones de bajo orden
+    incluyen filter, reduce, fold, sort, entre otras.</p>
+<h2>Función map, filtrar y reduce</h2>
+<h3>Función map</h3>
+<p>La función map toma una función y una colección (como una lista o un arreglo) como argumentos. Luego, aplica la
+    función proporcionada a cada elemento de la colección y devuelve una nueva colección que contiene los resultados. En
+    esencia, map permite transformar cada elemento de una colección de acuerdo con una regla o función específica.
+
+    Por ejemplo, si tenemos una lista de números y queremos duplicar cada número, podemos usar map de la siguiente
+    manera:</p>
+<pre style="background-color: #f0f0f0; border: 1px solid #ccc; padding: 10px; color: #333;">
+    <code>
+        numeros = [1, 2, 3, 4, 5]
+        duplicados = map(lambda x: x * 2, numeros)
+        # Resultado: [2, 4, 6, 8, 10]
+    </code>
+</pre>
+<h3>Filter</h3>
+<p>La función filter se utiliza para filtrar elementos de una colección según una condición específica. Toma una
+    función de prueba (un predicado) y una colección como entrada. Luego, devuelve una nueva colección que contiene solo
+    los elementos que pasan la prueba.
+
+    Por ejemplo, si tenemos una lista de números y queremos obtener solo los números pares, podemos usar filter de la
+    siguiente manera:</p>
+<pre style="background-color: #f0f0f0; border: 1px solid #ccc; padding: 10px; color: #333;">
+    <code>
+        numeros = [1, 2, 3, 4, 5, 6]
+        pares = filter(lambda x: x % 2 == 0, numeros)
+        # Resultado: [2, 4, 6]
+    </code>
+</pre>
+<h3>Reduce</h3>
+<p>La función reduce se utiliza para combinar todos los elementos de una colección en un solo valor. Toma una función
+    binaria (una función que toma dos argumentos) y una colección como entrada. Luego, aplica repetidamente la función a
+    pares de elementos en la colección hasta que se haya reducido a un solo valor.
+
+    Por ejemplo, si tenemos una lista de números y queremos calcular la suma de todos los elementos, podemos usar reduce
+    de la siguiente manera:</p>
+<pre style="background-color: #f0f0f0; border: 1px solid #ccc; padding: 10px; color: #333;">
+    <code>
+        from functools import reduce
+        numeros = [1, 2, 3, 4, 5]
+        suma = reduce(lambda x, y: x + y, numeros)
+        # Resultado: 15
+    </code>
+</pre>
+
+<h3>Funciones Puras: La Esencia de la programación Funcional</h3>
+<p><strong>Funciones Puras:</strong> La Esencia de la Programación Funcional
+    En el paradigma de programación funcional, las funciones puras son un concepto fundamental y esencial. Estas
+    funciones son la base de la programación funcional y desempeñan un papel clave en la creación de código limpio,
+    predecible y eficiente. Pero, ¿qué son exactamente las funciones puras y por qué son tan importantes?
+    Una función pura es una función que cumple con dos propiedades fundamentales:</p>
+<ol>
+    <li><strong>Determinismo:</strong> Dada la misma entrada (argumentos), una función pura siempre producirá la misma salida
+        (resultado). Esto significa que no hay lugar para la aleatoriedad o la variabilidad en el comportamiento de la
+        función.
+    </li>
+    <li><strong>Ausencia de Efectos Secundarios:</strong> Una función pura no debe tener ningún efecto secundario observable. Esto
+        implica que no modifica ninguna variable fuera de su ámbito local, no realiza operaciones de entrada/salida
+        (E/S), ni realiza ninguna acción que afecte al estado del sistema. En otras palabras, su única tarea es calcular
+        y devolver un valor.
+    </li>
+</ol>
+<p><strong>Las funciones puras son valiosas por varias razones:</strong></p>
+<ol>
+    <li><strong>Facilitan el Razonamiento:</strong> Al ser deterministas y sin efectos secundarios, las funciones puras son fáciles de
+        entender y razonar. Esto simplifica la depuración y el mantenimiento del código.
+    </li>
+    <li><strong>Testabilidad:</strong> Dado que las funciones puras producen resultados predecibles, son ideales para realizar pruebas
+        unitarias. Puedes confiar en que una función pura siempre dará los mismos resultados con la misma entrada.
+    </li>
+    <li><strong>Paralelismo y Concurrencia:</strong> Las funciones puras son seguras para su ejecución en paralelo, lo que facilita la
+        escritura de código concurrente y la explotación de recursos multi-núcleo.
+    </li>
+    <li><strong>Reusabilidad:</strong> Las funciones puras se pueden reutilizar en diferentes partes de un programa o en proyectos
+        diferentes, ya que no dependen del contexto ni tienen efectos secundarios no deseados.
+    </li>
+    <li><strong>Optimización:</strong> Los compiladores y motores de ejecución pueden optimizar el código más fácilmente cuando trabajan
+        con funciones puras, ya que pueden predecir su comportamiento.
+    </li>
+</ol>
+<p><strong>En la programación funcional, se fomenta la escritura de funciones puras siempre que sea posible.</strong> Al minimizar la
+    complejidad y los efectos secundarios, se crea un código más limpio y más confiable. Sin embargo, en la práctica, no
+    todas las partes de un programa pueden ser puras, especialmente cuando se trata de interacción con el mundo
+    exterior, como E/S o interfaces de usuario. En esos casos, es común utilizar funciones puras para abstraer y aislar
+    las partes impuras del código, lo que ayuda a mantener la integridad funcional en el núcleo del programa.</p>
+</body>
+</html>

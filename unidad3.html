@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="css/styles2.css" rel="stylesheet">
+    <title>Unidad 3</title>
+</head>
+<body>
+<h1 style="text-align: center">Unidad 3</h1>
+<a href="index.html" class="volver">Volver</a>
+<p>La programación multihilo en Java permite ejecutar múltiples hilos de forma simultánea, aprovechando los recursos del
+    procesador y mejorando la eficiencia de las aplicaciones.</p>
+<p><strong>¿Qué es la programación multihilo?</strong></p>
+<p>La multitarea o multihilos consiste en ejecutar varias tareas al mismo tiempo. En el contexto de la programación, un
+    hilo o thread es una parte del código que se ejecuta en paralelo con otras partes.</p>
+<p>Los hilos comparten los mismos recursos (a diferencia de los procesos, que tienen su propia copia de código y
+    datos).</p>
+<p>Existen dos planos de ejecución:</p>
+<ol>
+    <li><strong>Primer plano (Foreground):</strong> Lo que el usuario ve en pantalla, como botones, ventanas, imágenes,
+        etc. Aquí se
+        realizan cálculos comunes.
+    </li>
+    <li><strong>Segundo plano (Background):</strong> Procesa los hilos o la multitarea. Aquí se ejecutan procesos
+        pesados, como servicios
+        de software, conexiones a bases de datos, cálculos complejos, etc. El usuario no ve lo que ocurre en este plano.
+    </li>
+</ol>
+
+<p><strong>Ventajas de la programación multihilo</strong></p>
+<ol>
+    <li><strong>Mejora la capacidad de respuesta:</strong> Permite que una aplicación no quede bloqueada mientras
+        realiza tareas pesadas en segundo plano.
+    </li>
+    <li><strong>Priorización de procesos:</strong> En videojuegos, por ejemplo, se puede priorizar la renderización de imágenes sobre
+        otros procesos paralelos.
+    </li>
+</ol>
+
+<p><strong>Ejemplo práctico en Java</strong></p>
+<p>Supongamos que queremos mover imágenes en una simulación de carrera.</p>
+<p>Creamos tres hilos con velocidades aleatorias.</p>
+<p>En la parte gráfica, utilizamos el método setBounds para ajustar la velocidad de los hilos y mover las imágenes de
+    izquierda a derecha en el marco (JFrame)</p>
+
+</body>
+</html>
